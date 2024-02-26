@@ -4696,6 +4696,16 @@ input[type=submit]:disabled {
   max-width: 264px;
   width: 100%;
 }
+.map-wrap .map-sidebar .map-sidebar-box .backPref {
+  margin-top: 1rem;
+}
+.map-wrap .map-sidebar .map-sidebar-box .backPref a {
+  color: #663300;
+  text-decoration: underline;
+}
+.map-wrap .map-sidebar .map-sidebar-box .backPref a:hover {
+  opacity: 0.75;
+}
 
 .map-body .map-box {
   max-width: 100%;

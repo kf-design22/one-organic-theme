@@ -62,6 +62,16 @@
           width: 100%;
         }
       }
+      .backPref {
+        margin-top: 1rem;
+        a {
+          color: $color-main;
+          text-decoration: underline;
+          &:hover {
+            opacity: 0.75;
+          }
+        }
+      }
     }
   }
 }
