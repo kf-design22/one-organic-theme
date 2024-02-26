@@ -4729,6 +4729,12 @@ input[type=submit]:disabled {
   padding: 1rem;
   color: #363636;
 }
+.spot-list-wrap .spot-list .spot-list-item a figure img {
+  aspect-ratio: 1.618/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
 .spot-list-wrap .spot-list .spot-list-item a .spot-content .cat-name {
   font-weight: 700;
   font-size: 1rem;
@@ -5028,8 +5034,18 @@ input[type=submit]:disabled {
 .map-sgcontents .spot-image-list {
   margin-bottom: 4rem;
 }
-.map-sgcontents .spot-image-list img {
+.map-sgcontents .spot-image-list .spot-img-item a {
+  display: block;
+}
+.map-sgcontents .spot-image-list .spot-img-item a img {
   border-radius: 6px;
+  aspect-ratio: 1.618/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.map-sgcontents .spot-image-list .spot-img-item a:hover {
+  opacity: 0.75;
 }
 .map-sgcontents .spot-image-list .slide-arrow {
   color: #7cae78;

@@ -175,7 +175,14 @@
               <article class="spot-list-item <?php echo $spotType[0]->slug ?>-item">
                 <a href="<?php the_permalink() ?>">
                   <figure>
-                    <img src="https://picsum.photos/640/396/?random">
+                    <?php
+                      $pic_01 = get_field('spot_img01');
+                      if(!empty($pic_01)):
+                    ?>
+                      <img src="<?php echo esc_url($pic_01['url']) ?>" alt="<?php echo esc_url($pic_01['alt']) ?>">
+                    <?php else: ?>
+                      <img src="<?php echo get_template_directory_uri(); ?>/lib/images/map-noimg.jpg">
+                    <?php endif; ?>
                   </figure>
                   <div class="spot-content">
                     <!-- <p class="cat-name"><?php echo $spotType[0]->name ?></p> -->
@@ -309,7 +316,14 @@
               <article class="spot-list-item <?php echo $spotType[0]->slug ?>-item">
                 <a href="<?php the_permalink() ?>">
                   <figure>
-                    <img src="https://picsum.photos/640/396/?random">
+                    <?php
+                      $pic_01 = get_field('spot_img01');
+                      if(!empty($pic_01)):
+                    ?>
+                      <img src="<?php echo esc_url($pic_01['url']) ?>" alt="<?php echo esc_url($pic_01['alt']) ?>">
+                    <?php else: ?>
+                      <img src="<?php echo get_template_directory_uri(); ?>/lib/images/map-noimg.jpg">
+                    <?php endif; ?>
                   </figure>
                   <div class="spot-content">
                     <!-- <p class="cat-name"><?php echo $spotType[0]->name ?></p> -->

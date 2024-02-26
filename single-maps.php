@@ -77,19 +77,46 @@
 
               <div class="spot-image-list onlysp">
                 <div class="spot-img-item">
-                  <a href="https://picsum.photos/640/396/?random" data-lightbox="spotID_<?php the_ID(); ?>" data-title="My caption">
-                    <img src="https://picsum.photos/640/396/?random">
-                  </a>
+                  <?php
+                    $pic_01 = get_field('spot_img01');
+                    if(!empty($pic_01)):
+                  ?>
+                    <a href="<?php echo esc_url($pic_01['url']) ?>" data-lightbox="spotID_<?php the_ID(); ?>" data-title="<?php echo esc_url($pic_01['alt']) ?>">
+                      <img src="<?php echo esc_url($pic_01['url']) ?>" alt="<?php echo esc_url($pic_01['alt']) ?>">
+                    </a>
+                  <?php else: ?>
+                    <a href="<?php echo get_template_directory_uri(); ?>/lib/images/map-noimg.jpg" data-lightbox="spotID_<?php the_ID(); ?>" data-title="NO IMAGE">
+                      <img src="<?php echo get_template_directory_uri(); ?>/lib/images/map-noimg.jpg">
+                    </a>
+                  <?php endif; ?>
                 </div>
                 <div class="spot-img-item">
-                  <a href="https://picsum.photos/640/396/?random" data-lightbox="spotID_<?php the_ID(); ?>" data-title="My caption">
-                    <img src="https://picsum.photos/640/396/?random">
-                  </a>
+                  <?php
+                    $pic_02 = get_field('spot_img02');
+                    if(!empty($pic_02)):
+                  ?>
+                    <a href="<?php echo esc_url($pic_02['url']) ?>" data-lightbox="spotID_<?php the_ID(); ?>" data-title="<?php echo esc_url($pic_02['alt']) ?>">
+                      <img src="<?php echo esc_url($pic_02['url']) ?>" alt="<?php echo esc_url($pic_02['alt']) ?>">
+                    </a>
+                  <?php else: ?>
+                    <a href="<?php echo get_template_directory_uri(); ?>/lib/images/map-noimg.jpg" data-lightbox="spotID_<?php the_ID(); ?>" data-title="NO IMAGE">
+                      <img src="<?php echo get_template_directory_uri(); ?>/lib/images/map-noimg.jpg">
+                    </a>
+                  <?php endif; ?>
                 </div>
                 <div class="spot-img-item">
-                  <a href="https://picsum.photos/640/396/?random" data-lightbox="spotID_<?php the_ID(); ?>" data-title="My caption">
-                    <img src="https://picsum.photos/640/396/?random">
-                  </a>
+                  <?php
+                    $pic_03 = get_field('spot_img03');
+                    if(!empty($pic_03)):
+                  ?>
+                    <a href="<?php echo esc_url($pic_03['url']) ?>" data-lightbox="spotID_<?php the_ID(); ?>" data-title="<?php echo esc_url($pic_03['alt']) ?>">
+                      <img src="<?php echo esc_url($pic_03['url']) ?>" alt="<?php echo esc_url($pic_03['alt']) ?>">
+                    </a>
+                  <?php else: ?>
+                    <a href="<?php echo get_template_directory_uri(); ?>/lib/images/map-noimg.jpg" data-lightbox="spotID_<?php the_ID(); ?>" data-title="NO IMAGE">
+                      <img src="<?php echo get_template_directory_uri(); ?>/lib/images/map-noimg.jpg">
+                    </a>
+                  <?php endif; ?>
                 </div>
               </div>
 

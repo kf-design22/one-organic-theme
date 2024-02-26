@@ -99,6 +99,13 @@
         background: #fff;
         padding: 1rem;
         color: $color-bk;
+        figure {
+          img {
+            aspect-ratio: 1.618 / 1;
+            object-fit: cover;
+            width: 100%;
+          }
+        }
         .spot-content {
           .cat-name {
             font-weight: 700;
@@ -494,8 +501,19 @@
 .map-sgcontents {
   .spot-image-list {
     margin-bottom: 4rem;
-    img {
-      border-radius: 6px;
+    .spot-img-item {
+      a {
+        display: block;
+        img {
+          border-radius: 6px;
+          aspect-ratio: 1.618 / 1;
+          object-fit: cover;
+          width: 100%;
+        }
+        &:hover {
+          opacity: .75;
+        }
+      }
     }
     .slide-arrow {
       color: $color-green2;

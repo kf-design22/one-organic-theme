@@ -19,6 +19,10 @@
 ------------------------------*/
 
 function organic_file() {
+  if(is_singular('maps')) {
+    wp_enqueue_script( 'organic_lightbox', 'https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js', array(), '1.0', true );
+    wp_enqueue_style( 'organic_lightbox', 'https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css', array(), '1.0' );
+  }
   wp_enqueue_style( 'organic_slick', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css', array(), '1.0' );
   wp_enqueue_style( 'organic_slick-theme', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css', array(), '1.0' );
   wp_enqueue_script( 'organic_slick', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js', array(), '1.0', true );
