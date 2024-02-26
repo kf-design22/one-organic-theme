@@ -109,7 +109,7 @@
         <input type="submit" value="絞り込む">
       </div>
 
-      <p class="backPref"><a href="<?php echo esc_url(home_url('/organicmap/')); ?>">都道府県の選択に戻る</a></p>
+      <p class="backPref"><a href="<?php echo esc_url(home_url('/map/')); ?>">都道府県の選択に戻る</a></p>
 
     </form>
 
