@@ -1,0 +1,266 @@
+.archive,
+.page-all-posts {
+  .archive-feature {
+    .feature-slide-wrap {
+      padding-top: 0;
+    }
+  }
+}
+
+.archive-wrap {
+  padding: 6rem 0;
+  .heading-a {
+    position: relative;
+    margin-top: 6rem;
+    .riceplant-l {
+      position: absolute;
+      bottom: 0;
+      left: 3rem;
+    }
+
+    .riceplant-r {
+      position: absolute;
+      bottom: 0;
+      right: 3rem;
+    }
+  }
+}
+
+.archive-related-keyword {
+  background: #f9edd9;
+  padding: 2.5rem 1rem;
+  margin-bottom: 3rem;
+  .title-box {
+    .keyword-ttl {
+      color: $color-green;
+      font-family: ten-mincho,
+        serif;
+      font-size: 1.4125rem;
+    }
+
+    p {
+      font-family: "airfoil-script-ssi";
+      font-size: 1.5rem;
+      color: $color-green2;
+    }
+  }
+
+  .keyword-main {
+    ul {
+      list-style-type: none;
+
+      li {
+        margin-right: 1rem;
+        display: inline-block;
+        padding: .25rem 0;
+
+        &::before {
+          content: "|";
+          color: $color-green;
+          margin-right: 1rem;
+        }
+
+        a {
+          color: $color-green;
+
+          &:hover {
+            opacity: .75;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.archive-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  article {
+    flex-basis: 48%;
+    margin-bottom: 1rem;
+    @include articlelist-1;
+
+    a {
+      figure {
+        aspect-ratio: 1.618 / 1;
+
+        img {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .post-empty {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.pagenate-wrap {
+  margin-top: 3rem;
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    li {
+      font-family: ab-yurumin,
+      sans-serif;
+      & + li {
+        margin-left: .375rem;
+      }
+      .page-numbers {
+        display: block;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: transparent;
+        color: $color-green;
+        &.current {
+          background: #fff;
+          color: $color-main;
+        }
+        &.dots {
+          font-family: source-han-sans-japanese,
+          "游ゴシック体",
+          YuGothic,
+          "游ゴシック Medium",
+          "Yu Gothic Medium",
+          "游ゴシック",
+          "Yu Gothic",
+          'Hiragino Kaku Gothic Pro',
+          'ヒラギノ角ゴ Pro W3',
+          "メイリオ",
+          sans-serif;
+        }
+      }
+      a {
+        &:hover {
+          background: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .archive-wrap {
+    .heading-a {
+      .riceplant-l {
+        left: -3rem;
+        width: 190px;
+      }
+
+      .riceplant-r {
+        right: -2rem;
+        width: 152px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .archive-wrap {
+    .heading-a {
+      .riceplant-l {
+        width: 112px;
+        bottom: 3rem;
+        left: -2rem;
+      }
+
+      .riceplant-r {
+        width: 95px;
+        bottom: 3rem;
+        right: -2rem;
+      }
+    }
+  }
+  .archive-related-keyword {
+    .title-box {
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .archive-wrap {
+    .heading-a {
+      h2 {
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+  .archive-related-keyword {
+    display: flex;
+    align-items: center;
+    padding: 2.5rem;
+    .title-box {
+      flex-basis: 200px;
+    }
+
+    .keyword-main {
+      flex-basis: calc(100% - 200px);
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .archive-list {
+    article {
+      flex-basis: 31.5%;
+      margin-bottom: 1.75rem;
+    }
+  }
+}
+
+
+// feature
+
+.feature-info {
+  margin-bottom: 3rem;
+  figure {
+    img {
+      border-radius: 8px;
+      width: 100%;
+    }
+  }
+
+  .info {
+    padding: 2rem 0;
+
+    h3 {
+      text-align: center;
+      font-size: 2rem;
+      color: $color-green;
+      font-weight: 500;
+      margin-bottom: 2.5rem;
+      position: relative;
+
+      &::after {
+        background: url(../images/heading-deco.png);
+        width: 67px;
+        height: 13px;
+        content: "";
+        position: absolute;
+        bottom: -1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .feature-info {
+    .info {
+      padding: 2.5rem 0;
+    }
+  }
+}

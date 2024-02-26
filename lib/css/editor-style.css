@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+body#tinymce {
+	font: 16px 'Lato', "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN",  "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "メイリオ", Meiryo, sans-serif; overflow-wrap: break-word; word-break: normal;
+}
+
+/* .editor-area の下層にタグを入れる */
+
+.editor-area p {
+	line-height: 1.9;
+	margin-bottom: 1.75rem;
+	text-align: justify;
+}
